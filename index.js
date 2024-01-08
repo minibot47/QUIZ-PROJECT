@@ -136,6 +136,9 @@ var list3 = document.getElementById('list3')
 var list4 = document.getElementById('list4')
 let number = 0
 
+function updateTimer(seconds) {
+    document.getElementById('time').innerText = seconds;
+  }
 
 
 let answers = []
@@ -414,6 +417,27 @@ next.addEventListener('click',
 
 
 )
+
+function startTimer() {
+    let seconds = 60;
+    updateTimer(seconds);
+  
+    const timerInterval = setInterval(function() {
+      seconds--;
+  
+      if (seconds >= 0) {
+        updateTimer(seconds);
+      } else {
+        clearInterval(timerInterval);
+        alert('GAME OVER!!!');
+        cover.style.display = 'none',
+        score.style.display = 'flex'
+
+      }
+    }, 1000);
+}
+
+window.onload = startTimer;
 
 
 
