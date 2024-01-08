@@ -419,7 +419,7 @@ next.addEventListener('click',
 )
 
 function startTimer() {
-    let seconds = 1000;
+    let seconds = 60;
     updateTimer(seconds);
   
     const timerInterval = setInterval(function() {
