@@ -200,5 +200,39 @@ ol button{
 }
 
 
-
+@media screen and (max-width: 600px) {
+    .timer{
+        width: 30%;
+    }
+    #cover{
+        font-size: 12px;
+    }
+    .buttons{
+        gap: 20px;
+    }
+    #option0{
+        width: 80%;
+        padding-left: 10px;
+    }
+    #option1{
+        width: 80%;
+        padding-left: 10px;
+    }
+    #option2{
+        width: 80%;
+        padding-left: 10px;
+    }
+    #option3{
+        width: 80%;
+        padding-left: 10px;
+    }
+    #scores{
+        font-size: 10px;
+        width: 80%;
+    }
+    #scorestext{
+        font-size: 18px;
+    }
+  
+  }
 
